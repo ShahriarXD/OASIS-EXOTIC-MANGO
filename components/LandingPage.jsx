@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 import {
   Beaker,
   Citrus,
@@ -30,17 +29,17 @@ const products = [
   {
     title: "OASIS Mango Classic",
     desc: "A silky tropical blend with bright mango sweetness and a juicy finish.",
-    image: "/assets/product1.png",
+    image: "/OASIS-EXOTIC-MANGO/assets/product1.png",
   },
   {
     title: "OASIS Mango Gold",
     desc: "A richer and bolder pour crafted for a deep, premium mango character.",
-    image: "/assets/product2.png",
+    image: "/OASIS-EXOTIC-MANGO/assets/product2.png",
   },
   {
     title: "OASIS Mango Spark",
     desc: "An uplifting mango profile with a clean, fresh taste for every moment.",
-    image: "/assets/product3.png",
+    image: "/OASIS-EXOTIC-MANGO/assets/product3.png",
   },
 ];
 
@@ -68,10 +67,6 @@ const fadeInUp = {
 };
 
 export default function LandingPage() {
-  const router = useRouter();
-  const basePath = "/OASIS-EXOTIC-MANGO";
-  const assetPath = (path) => `${basePath}${path}`;
-
   const heroRef = useRef(null);
   const canvasRef = useRef(null);
   const loadedFramesRef = useRef([]);
@@ -86,7 +81,7 @@ export default function LandingPage() {
       Array.from(
         { length: 192 },
         (_, i) =>
-          assetPath(`/hero-section/ezgif-frame-${String(i + 1).padStart(3, "0")}.jpg`),
+          `/OASIS-EXOTIC-MANGO/hero-section/ezgif-frame-${String(i + 1).padStart(3, "0")}.jpg`,
       ),
     [],
   );
@@ -348,7 +343,7 @@ export default function LandingPage() {
                   }}
                 >
                   <Image
-                    src={assetPath("/assets/product1.png")}
+                    src="/assets/product1.png"
                     width={200}
                     height={280}
                     alt="OASIS Mango Classic bottle"
@@ -368,7 +363,7 @@ export default function LandingPage() {
                   }}
                 >
                   <Image
-                    src={assetPath("/assets/product2.png")}
+                    src="/assets/product2.png"
                     width={180}
                     height={240}
                     alt="OASIS Mango Gold bottle"
@@ -387,7 +382,7 @@ export default function LandingPage() {
                   }}
                 >
                   <Image
-                    src={assetPath("/assets/product3.png")}
+                    src="/assets/product3.png"
                     width={240}
                     height={320}
                     alt="OASIS Mango Spark bottle"
@@ -473,7 +468,7 @@ export default function LandingPage() {
         <div className="glossy-panel grid overflow-hidden rounded-[2rem] md:grid-cols-2">
           <div className="relative min-h-[380px] bg-gradient-to-br from-[#ffeebf] to-[#ffc95f] p-6">
             <Image
-              src={assetPath("/assets/Nutrition facts.png")}
+              src="/OASIS-EXOTIC-MANGO/assets/Nutrition facts.png"
               alt="Nutrition fact label"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
