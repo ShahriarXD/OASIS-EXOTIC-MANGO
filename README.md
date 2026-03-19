@@ -116,12 +116,12 @@ Every push to the repository:
 
 ---
 
-## 📸 Screenshots (Optional)
+## 📸 Screenshots
 
 > Add screenshots here to showcase your UI
 > Example:
 >
-> ![Hero Section](./public/screenshots/hero.png)
+> ![Hero Section](.ss.png)
 
 ---
 
