@@ -118,7 +118,7 @@ Every push to the repository:
 
 ## 📸 Screenshots
 
-> Add screenshots here to showcase your UI
+> Screenshots showcase of UI
 > Example:
 >
 > ![Hero Section](ss.png)
