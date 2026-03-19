@@ -183,7 +183,7 @@ export default function LandingPage() {
     const animateFrames = () => {
       const current = currentFrameValue.current;
       const target = targetFrameValue.current;
-      const smoothed = current + (target - current) * 0.24;
+      const smoothed = current + (target - current) * 0.15;
 
       currentFrameValue.current = smoothed;
 
@@ -343,7 +343,7 @@ export default function LandingPage() {
                   }}
                 >
                   <Image
-                    src="/assets/product1.png"
+                    src="/OASIS-EXOTIC-MANGO/assets/product1.png"
                     width={200}
                     height={280}
                     alt="OASIS Mango Classic bottle"
@@ -363,7 +363,7 @@ export default function LandingPage() {
                   }}
                 >
                   <Image
-                    src="/assets/product2.png"
+                    src="/OASIS-EXOTIC-MANGO/assets/product2.png"
                     width={180}
                     height={240}
                     alt="OASIS Mango Gold bottle"
@@ -382,7 +382,7 @@ export default function LandingPage() {
                   }}
                 >
                   <Image
-                    src="/assets/product3.png"
+                    src="/OASIS-EXOTIC-MANGO/assets/product3.png"
                     width={240}
                     height={320}
                     alt="OASIS Mango Spark bottle"
