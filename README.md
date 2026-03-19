@@ -121,7 +121,7 @@ Every push to the repository:
 > Add screenshots here to showcase your UI
 > Example:
 >
-> ![Hero Section](.ss.png)
+> ![Hero Section](ss.png)
 
 ---
 
